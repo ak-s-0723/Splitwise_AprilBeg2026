@@ -1,0 +1,12 @@
+package org.example.splitwise_april2026beg.strategies;
+
+import org.example.splitwise_april2026beg.dtos.Transaction;
+import org.example.splitwise_april2026beg.models.Expense;
+
+import java.util.List;
+
+public interface SettleUpStrategy {
+
+    //getProposedTransactionsToSettleUpGroup
+    List<Transaction> settleUp(List<Expense> expenses);
+}
